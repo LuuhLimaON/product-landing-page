@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title></title>
+</head>
+
+<body>
+    
+    <div id="page-wrapper">
+        <!-- NAVBAR -->
+        <header id="header">
+            <a href="#">
+                <div class="logo">
+                    <img id="header-img" src="https://i.ibb.co/Vx8Mdj8/logo.png">
+                </div>  
+            </a>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#models">Models</a></li>
+                    <li><a class="nav-link" href="#order">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <div class="about-text">
+                <h1>Make magic with music.</h1>
+                <br>
+                <h3>High-quality, handmade instruments crafted by magical creatures to bring joy to the world</h3>
+            </div>
+
+            <div class="video">
+                <button id="button" type="button" class="collapsible btn-video">Show video</button>
+
+                <div class="content">
+                    <iframe id="video" height="315" src="https://www.youtube.com/embed/0RkSy6ElNIY"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="models">
+            <h1 class="title">Our Products</h1>
+
+            <br>
+
+            <div class="cards">
+     
+                <div class="product">
+                    <div class="name">Butterfly Electric Violin</div>
+                    <img src="https://pbs.twimg.com/media/FDxko11WUAcvjSc?format=jpg&name=medium">
+                    <div class="price">$1200</div>
+                </div>
+
+                <div class="product">
+                    <div class="name">Glass Electric Violin</div>
+                    <img src="https://i.pinimg.com/474x/62/a3/a0/62a3a033d5f99455a3708ff084407c73--violin-music-cello.jpg">
+                    <div class="price">$800</div>
+                </div>
+
+                <div class="product">
+                    <div class="name">Black and Purple Violin</div>
+                    <img src="https://sc02.alicdn.com/kf/HTB1in5DiwfH8KJjy1zcq6ATzpXaH/221641257/HTB1in5DiwfH8KJjy1zcq6ATzpXaH.jpg_.webp">
+                    <div class="price">$1000</div>
+                </div>
+            </div>
+
+        </section>
+            <!-- CONTACT US -->
+            <section id="order">
+                <h1 class="title">Pre-order Now!</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">           
+                    <input id="email" name="email" type="email" placeholder="Enter your Email adress"required>
+                    <br>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

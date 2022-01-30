@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: hsl(200, 69%, 15%);
+    text-decoration: none;
+    padding: 0.8em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+iframe {
+    width: 50vw;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: white;
+    transition: 0.5s;
+    background-color: hsl(286, 57%, 79%);
+    border-radius: 15px;
+    padding: 0.8em;
+}
+
+#page-wrapper {
+    position: relative;
+    width: 100vw;
+}
+
+@media (max-width: 768px) {
+    #page-wrapper {
+        width: 100vw;
+    }
+}
+
+/*============== NAVBAR============== */
+header {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo img {
+    width: 10rem;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    header {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+    .logo img {
+        margin: 0;
+    }
+}
+/* ==============ABOUT============== */
+#about {
+    color: hsl(200, 69%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    height: fit-content;
+    background: linear-gradient(45deg, hsl(200, 57%, 79%), hsl(286, 57%, 79%));
+}
+
+.about-text {
+    margin-top: 5rem;
+}
+
+.video {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.collapsible {
+    color: hsl(200, 69%, 15%);
+    width: 35%;
+    padding: 20px;
+    margin: 2.5rem auto;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.collapsible:hover {
+    cursor:pointer; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    margin: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+
+/*============= PRODUCT MODELS============== */
+
+#models {
+    margin: 3rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .cards {
+        display:flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .product {
+        margin: 20px auto;
+    }
+}
+
+.title {
+    color: hsl(200, 69%, 15%);
+    margin: 6rem auto 2rem auto;
+    height: max-content;
+}
+
+.product {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin: 20px auto;
+}
+
+.product:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.product img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.name {
+    color: hsl(200, 69%, 15%);
+    background: linear-gradient(45deg, hsla(200, 57%, 79%, 0.5), hsl(286, 57%, 79%, 0.5));
+    padding: 1.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.price {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.product img {
+    width: 100%;
+}
+
+
+/* ==========FORM - PRE ORDER============ */
+#order {
+    color: hsl(200, 69%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    height: fit-content;
+    width: 100vw;
+    background: linear-gradient(45deg, hsl(200, 57%, 79%), hsl(286, 57%, 79%));
+}
+
+
+#email {
+    border-radius: 15px;
+    height: 2rem;
+    width: fit-content;
+    padding: 1.5rem;
+    border: 2px solid hsl(200, 69%, 15%);
+    margin: 2rem auto;
+}
+
+#submit {
+    color: hsl(200, 69%, 15%);
+    width: fit-content;
+    padding: 20px;
+    margin: 1rem auto 3rem auto;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    cursor:pointer; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
